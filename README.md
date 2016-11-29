@@ -32,3 +32,25 @@ And at the end of /etc/pam.d/common-session
 ```text
 session required pam_exec.so /lib/x86_64-linux-gnu/security/luksypam/luksypam/luksypam_close_session.py
 ```
+
+## Bonus
+
+* Création du conteneur + fichier de conf à la volée.
+* Plug module PAM à la session SSH.
+* Utilisation de systemd pour remonter les infos. avec mode verbeux ou non
+* Il y a un changement du mot de passe du conteneur indépendant du pass unix au travers d'un CLI
+* Multi conteneurs.
+* Changement du point de montage + nom du volume.
+* Python3 bitch
+* Build module pycryptsetup
+* Modification du module pycryptsetup (algo de hachage + True random)
+* Gestion de profils (weak or not?)
+* Personnalisation possible au travers de constantes
+* Génération d'un conteneur vide rempli aléatoirement
+* Effacement sécurisé des conteneurs
+* Base de données pour stocker les mots de passes voulus
+* Spécifier la taille d'un nouveau conteneur
+* Gestion sécurité avancé (le .. dans les paths)
+* Validateur de configuration
+* Possibilité de désactiver des conteneurs
+* Recode de pam_exec.so
